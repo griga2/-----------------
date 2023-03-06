@@ -21,7 +21,7 @@ class ImageManager():
     def OpenFile(path):
         img = Image.open(path)
         print('File open ',path)
-        img.save(GetFileCount(BaseName))
+        img.save(ImageManager.GetFileCount(BaseName))
         
 class BaseManager():
     def OpenBase():
